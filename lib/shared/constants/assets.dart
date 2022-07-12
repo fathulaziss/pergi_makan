@@ -6,4 +6,5 @@ class AppImages {
 
 class AppIcons {
   static String icMenu = 'assets/icons/ic_menu.png';
+  static String icSearch = 'assets/icons/ic_search.png';
 }

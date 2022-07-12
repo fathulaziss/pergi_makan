@@ -74,27 +74,27 @@ class Corners {
 
 class BorderStyles {
   static OutlineInputBorder enableTextField = OutlineInputBorder(
-    borderSide: BorderSide(color: AppColors.primaryColor2, width: 1),
+    borderSide: const BorderSide(color: Colors.transparent, width: 1),
     borderRadius: Corners.xlBorder,
   );
 
   static OutlineInputBorder focusTextField = OutlineInputBorder(
-    borderSide: BorderSide(color: AppColors.primaryColor, width: 1),
+    borderSide: const BorderSide(color: Colors.transparent, width: 1),
     borderRadius: Corners.xlBorder,
   );
 
   static OutlineInputBorder disableTextField = OutlineInputBorder(
-    borderSide: BorderSide(color: AppColors.primaryColor2, width: 1),
+    borderSide: const BorderSide(color: Colors.transparent, width: 1),
     borderRadius: Corners.xlBorder,
   );
 
   static OutlineInputBorder errorTextField = OutlineInputBorder(
-    borderSide: BorderSide(color: AppColors.redColor, width: 1),
+    borderSide: const BorderSide(color: Colors.transparent, width: 1),
     borderRadius: Corners.xlBorder,
   );
 
   static OutlineInputBorder focusedErrorBorder = OutlineInputBorder(
-    borderSide: BorderSide(color: AppColors.redColor, width: 1),
+    borderSide: const BorderSide(color: Colors.transparent, width: 1),
     borderRadius: Corners.xlBorder,
   );
 }
@@ -113,11 +113,10 @@ InputDecoration inputDecoration(
     focusedErrorBorder: BorderStyles.focusedErrorBorder,
     errorMaxLines: 5,
     prefixIconConstraints:
-        BoxConstraints(minHeight: Sizes.lg, minWidth: Sizes.lg),
+        BoxConstraints(minHeight: Sizes.med, minWidth: Sizes.med),
     suffixIconConstraints:
-        BoxConstraints(minHeight: Sizes.lg, minWidth: Sizes.lg),
-    contentPadding:
-        EdgeInsets.symmetric(horizontal: Insets.xl, vertical: Insets.med),
+        BoxConstraints(minHeight: Sizes.med, minWidth: Sizes.med),
+    contentPadding: EdgeInsets.zero,
     hintStyle: TextStyles.greyLight.copyWith(
         letterSpacing: 0.2,
         fontSize: FontSizes.s16,
@@ -153,10 +152,10 @@ class Shadows {
 
   static List<BoxShadow> get shadowsUp => [
         BoxShadow(
-            color: AppColors.primaryColor.withOpacity(.15),
+            color: AppColors.blackColor.withOpacity(.15),
             spreadRadius: 1,
             blurRadius: 3,
-            offset: const Offset(-1, 0)),
+            offset: const Offset(-1, 2)),
       ];
 }
 
