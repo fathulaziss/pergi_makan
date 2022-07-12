@@ -66,7 +66,7 @@ class PageDestination extends StatelessWidget {
                 const TabbarSubMenu(),
                 SizedBox(
                   width: double.infinity,
-                  height: 80.h,
+                  height: 60.h,
                   child: GridView.builder(
                     physics: const NeverScrollableScrollPhysics(),
                     padding:
@@ -76,7 +76,7 @@ class PageDestination extends StatelessWidget {
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 4,
                       childAspectRatio: 4,
-                      mainAxisSpacing: 10,
+                      mainAxisSpacing: 5,
                       crossAxisSpacing: 5,
                     ),
                     itemCount: modelDestination.tags.length,

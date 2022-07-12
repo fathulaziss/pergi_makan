@@ -46,7 +46,7 @@ class PageHome extends StatelessWidget {
                 shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  childAspectRatio: 2 / 2.3,
+                  childAspectRatio: 2 / 2.5,
                   mainAxisSpacing: 20,
                   crossAxisSpacing: 10,
                 ),

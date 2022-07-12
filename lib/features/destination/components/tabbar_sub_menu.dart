@@ -10,7 +10,7 @@ class TabbarSubMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 40.h,
+      height: 30.h,
       child: Stack(
         children: [
           Align(
@@ -26,14 +26,19 @@ class TabbarSubMenu extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  child: Stack(
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Makanan', style: TextStyles.blackNormal),
-                      CardRounded(
-                        width: MediaQuery.of(context).size.width / 10,
-                        height: 3.h,
-                        backgroundColor: AppColors.primaryColor,
+                      Center(
+                          child:
+                              Text('Makanan', style: TextStyles.blackNormal)),
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: CardRounded(
+                          width: MediaQuery.of(context).size.width / 10,
+                          height: 3.h,
+                          backgroundColor: AppColors.primaryColor,
+                        ),
                       )
                     ],
                   ),

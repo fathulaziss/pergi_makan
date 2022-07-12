@@ -25,6 +25,7 @@ class PageSplashScreen extends StatelessWidget {
             Image.asset(AppImages.imgSplashScreen, width: 150.w),
             Text(
               'Pergi Makan\nBanjarmasin',
+              textAlign: TextAlign.center,
               style: TextStyles.blackSemiBold.copyWith(fontSize: FontSizes.s20),
             )
           ],

@@ -154,7 +154,7 @@ class Shadows {
 
   static List<BoxShadow> get shadowsUp => [
         BoxShadow(
-            color: AppColors.blackColor.withOpacity(.15),
+            color: AppColors.blackColor.withOpacity(.20),
             spreadRadius: 1,
             blurRadius: 3,
             offset: const Offset(-1, 2)),
