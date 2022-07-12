@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:pergi_makan/features/destination/page_destination.dart';
+import 'package:pergi_makan/features/home/components/card_destination.dart';
 import 'package:pergi_makan/features/home/components/input_search.dart';
 import 'package:pergi_makan/shared/constants/assets.dart';
 import 'package:pergi_makan/shared/constants/styles.dart';
+import 'package:pergi_makan/shared/others/list_destination.dart';
 import 'package:pergi_makan/shared/widgets/appbar/appbar.dart';
-import 'package:pergi_makan/shared/widgets/cards/card_rounded.dart';
 
 class PageHome extends StatelessWidget {
   const PageHome({Key? key}) : super(key: key);
@@ -43,18 +46,17 @@ class PageHome extends StatelessWidget {
                 shrinkWrap: true,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  childAspectRatio: 4,
+                  childAspectRatio: 2 / 2.3,
                   mainAxisSpacing: 20,
                   crossAxisSpacing: 10,
                 ),
-                itemCount: 4,
+                itemCount: listDestination.length,
                 itemBuilder: (context, index) {
-                  return CardRounded(
-                    height: 50.h,
-                    shadow: Shadows.shadowsUp,
-                    backgroundColor: AppColors.whiteColor,
-                    margin: EdgeInsets.zero,
-                    padding: EdgeInsets.zero,
+                  return CardDestination(
+                    modelDestination: listDestination[index],
+                    onTap: () => Get.to(() => PageDestination(
+                          modelDestination: listDestination[index],
+                        )),
                   );
                 },
               ),

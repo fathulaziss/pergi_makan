@@ -12,10 +12,12 @@ class AppColors {
   static Color whiteColor = const Color(0xFFFFFFFF);
   static Color blackColor = const Color(0xFF000000);
   static Color greyColor = const Color(0xFF6F7789);
+  static Color greyColor2 = const Color(0xFFFCFCFC);
   static Color redColor = const Color(0xFFEB70A5);
 }
 
 class FontSizes {
+  static double get s9 => 9.w;
   static double get s10 => 10.w;
   static double get s12 => 12.w;
   static double get s14 => 14.w;
