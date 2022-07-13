@@ -1,4 +1,4 @@
-package com.example.pergi_makan
+package com.fathulazis.pergi_makan
 
 import io.flutter.embedding.android.FlutterActivity
 

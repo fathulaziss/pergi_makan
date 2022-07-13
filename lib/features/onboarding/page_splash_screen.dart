@@ -23,6 +23,7 @@ class PageSplashScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(AppImages.imgSplashScreen, width: 250.w),
+            verticalSpace(10.h),
             Text(
               'Pergi Makan\nBanjarmasin',
               textAlign: TextAlign.center,
