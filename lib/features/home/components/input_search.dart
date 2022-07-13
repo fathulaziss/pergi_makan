@@ -33,7 +33,7 @@ class _InputSearchState extends State<InputSearch> {
         controller: controllerSearch,
         onChanged: (value) {},
         decoration: inputDecoration(
-          hintText: 'Kalimantan Tengah',
+          hintText: 'Kalimantan Selatan',
           prefixIcon: Padding(
             padding: EdgeInsets.symmetric(horizontal: 10.w),
             child: Image.asset(AppIcons.icSearch, width: 20.w),

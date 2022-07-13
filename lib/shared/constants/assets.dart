@@ -1,7 +1,9 @@
-class AppLogos {}
+class AppLogos {
+  static String logoApp = 'assets/logos/logo_app.jpeg';
+}
 
 class AppImages {
-  static String imgSplashScreen = 'assets/images/img_splash_screen.png';
+  static String imgSplashScreen = 'assets/images/img_splash_screen.jpeg';
   static String imgDestination1 = 'assets/images/img_destination1.png';
   static String imgDestination2 = 'assets/images/img_destination2.png';
   static String imgDestination3 = 'assets/images/img_destination3.png';
